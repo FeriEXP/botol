@@ -9,35 +9,34 @@
         "python",
         "akeno"
     ],
-    "repository": "https://github.com/TeamKillerX/Akeno-Userbot",
-    "website": "https://akeno.randydev.my.id",
-    "success_url": "https://t.me/TeamKillerX",
+    "repository": "https://github.com/FeriEXP/botol",
     "stack": "container",
     "env": {
         "API_ID": {
-            "description": "You api id, from my.telegram.org.",
+            "description": "Your API ID, from my.telegram.org.",
             "value": "",
             "required": true
         },
         "API_HASH": {
-            "description": "You api hash, from my.telegram.org.",
+            "description": "Your API Hash, from my.telegram.org.",
             "value": "",
             "required": true
         },
         "SESSION": {
             "description": "Session String (pyrogram) for your telegram user account. The userbot will NOT work without a session string!!",
-            "value": ""
+            "value": "",
+            "required": true
         },
         "MONGO_URL": {
-            "description": "Mongodb endpoint URL, from mongodb.com",
+            "description": "MongoDB endpoint URL, from mongodb.com",
             "value": "",
             "required": true
         },
         "GOOGLE_API_KEY": {
-            "description": "ONLY, If you want to use gemini ai plugin You can get it from https://ai.google.dev",
+            "description": "Only if you want to use the Gemini AI plugin. You can get it from https://ai.google.dev",
             "value": "",
             "required": true
-        },
+        }
     },
     "formation": {
         "akeno": {
