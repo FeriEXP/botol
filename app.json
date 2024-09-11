@@ -9,7 +9,9 @@
         "python",
         "akeno"
     ],
-    "repository": "https://github.com/FeriEXP/botol",
+    "repository": "https://github.com/TeamKillerX/Akeno-Userbot",
+    "website": "https://akeno.randydev.my.id",
+    "success_url": "https://t.me/TeamKillerX",
     "stack": "container",
     "env": {
         "API_ID": {
