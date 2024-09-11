@@ -10,31 +10,31 @@
         "botol"
     ],
     "env": {
-        "API_ID": {
-            "description": "Your API ID, from my.telegram.org.",
-            "value": "",
-            "required": true
+      "API_ID": {
+        "description": "Your API ID, from my.telegram.org.",
+        "value": "",
+        "required": true
         },
         "API_HASH": {
-            "description": "Your API Hash, from my.telegram.org.",
-            "value": "",
-            "required": true
+          "description": "Your API Hash, from my.telegram.org.",
+          "value": "",
+          "required": true
         },
         "SESSION": {
-            "description": "Session String (pyrogram) for your telegram user account. The userbot will NOT work without a session string!!",
-            "value": "",
-            "required": true
+          "description": "Session String (pyrogram) for your telegram user account. The userbot will NOT work without a session string!!",
+          "value": "",
+          "required": true
         },
         "MONGO_URL": {
-            "description": "MongoDB endpoint URL, from mongodb.com",
-            "value": "",
-            "required": true
+          "description": "MongoDB endpoint URL, from mongodb.com",
+          "value": "",
+          "required": true
         },
         "GOOGLE_API_KEY": {
-            "description": "Only if you want to use the Gemini AI plugin. You can get it from https://ai.google.dev",
-            "value": "",
-            "required": true
-        }
+          "description": "Only if you want to use the Gemini AI plugin. You can get it from https://ai.google.dev",
+          "value": "",
+          "required": true
+    }
   },
   "buildpacks": [
     {
