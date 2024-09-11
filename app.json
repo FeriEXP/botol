@@ -1,5 +1,5 @@
 {
-    "name": "Akeno UserBot",
+    "name": "botol UserBot",
     "description": "Pluggable telegram userbot, made in python using pyrogram.",
     "logo": "https://telegra.ph/file/c08a0f31b5527480c7540.jpg",
     "keywords": [
@@ -7,12 +7,8 @@
         "telegram",
         "userbot",
         "python",
-        "akeno"
+        "botol"
     ],
-    "repository": "https://github.com/TeamKillerX/Akeno-Userbot",
-    "website": "https://akeno.randydev.my.id",
-    "success_url": "https://t.me/TeamKillerX",
-    "stack": "container",
     "env": {
         "API_ID": {
             "description": "Your API ID, from my.telegram.org.",
@@ -39,11 +35,19 @@
             "value": "",
             "required": true
         }
+  },
+  "buildpacks": [
+    {
+      "url": "heroku/python"
     },
-    "formation": {
-        "akeno": {
-            "quantity": 1,
-            "size": "eco"
-        }
+    {
+      "url": "https://github.com/heroku/heroku-buildpack-apt"
+    },
+    {
+      "url": "https://github.com/heroku/heroku-buildpack-activestorage-preview"
+    },
+    {
+      "url": "https://github.com/The-MoonTg-project/heroku-buildpack-yt-dlp"
     }
+  ]
 }
