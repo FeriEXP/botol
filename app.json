@@ -1,0 +1,53 @@
+{
+    "name": "botol UserBot",
+    "description": "Pluggable telegram userbot, made in python using pyrogram.",
+    "logo": "https://telegra.ph/file/c08a0f31b5527480c7540.jpg",
+    "keywords": [
+        "pyrogram",
+        "telegram",
+        "userbot",
+        "python",
+        "botol"
+    ],
+    "env": {
+      "API_ID": {
+        "description": "Your API ID, from my.telegram.org.",
+        "value": "",
+        "required": true
+        },
+        "API_HASH": {
+          "description": "Your API Hash, from my.telegram.org.",
+          "value": "",
+          "required": true
+        },
+        "SESSION": {
+          "description": "Session String (pyrogram) for your telegram user account. The userbot will NOT work without a session string!!",
+          "value": "",
+          "required": true
+        },
+        "MONGO_URL": {
+          "description": "MongoDB endpoint URL, from mongodb.com",
+          "value": "",
+          "required": true
+        },
+        "GOOGLE_API_KEY": {
+          "description": "Only if you want to use the Gemini AI plugin. You can get it from https://ai.google.dev",
+          "value": "",
+          "required": true
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "heroku/python"
+    },
+    {
+      "url": "https://github.com/heroku/heroku-buildpack-apt"
+    },
+    {
+      "url": "https://github.com/heroku/heroku-buildpack-activestorage-preview"
+    },
+    {
+      "url": "https://github.com/The-MoonTg-project/heroku-buildpack-yt-dlp"
+    }
+  ]
+}
